@@ -13,66 +13,69 @@
             <form class="row"><br><br>
                 
                     <div class="col-12 col-md-6">
-                      <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                      <input type="text" class="form-control w-75" placeholder="First name" aria-label="First name">
                     </div><br><br>
                     <div class="col-12 col-md-6">
-                      <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                      <input type="text" class="form-control w-75" placeholder="Last name" aria-label="Last name">
                     </div><br><br>
                     <div class="col-12 col-md-6">
-                        <input type="date" class="form-control " placeholder="Date" aria-label="Date">
+                        <input type="date" class="form-control w-75" placeholder="Date" aria-label="Date">
                     </div><br><br>
                     
                     
-                    <div class="col-12 col-md-6" form-floating">
-                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <div class="col-12 col-md-6" form-floating>
+                        <input type="password" class="form-control w-75 " id="floatingPassword" placeholder="Password">
                         
                     </div>
-                    <div class="col-12 col-md-6" form-floating mb-3">
-                      <input type="email" class="form-control" id="floatingInput" placeholder="Email">
+                    <div class="col-12 col-md-6" form-floating mb-3>
+                      <input type="email" class="form-control w-75" id="floatingInput" placeholder="Email">
                       
                   </div>
                 <br>
                 <div class="col-12 col-md-6">
                     <!-- <label for="exampleFormControlInput4" class="form-label">City</label> -->
-                    <select class="form-select " >
+                    <select class="form-select w-75 " >
                         <option value="usa">USA</option>
                         <option value="ru">Russia</option>
                         <option value="uzb" selected>Uzbekistan</option>
                         <option value="kzg">Kazakhistan</option>
                     </select>
                   </div><br><br>
+                  
+                  <div class="col-12 col-md-6">
+                    <input value="+998" type="tel" placeholder="+998 -- --- -- --" class="w-75  form-control ">
+                  </div><br><br>
+                 
+                  <div class="col-12 col-md-6">
+                    <input class="form-control  w-75" type="file" id="exampleFormControlInput8" name="images" accept="image/*">
+                  </div>
                   <div class="col-12 col-md-6 ">
                     <p>Gender:</p>
-                    <label for="grils">Grils</label>
+                    <label for="grils">Female</label>
                     <input id="grils" name="gender" type="radio"><br>
-                    <label for="Boys">Boys</label>
+                    <label for="Boys">Male</label>
                     <input id="Boys" name="gender" type="radio">
                   </div><br><br>
-                  <div class="col-12 col-md-6 ">
+                  <div class="col-12 col-md-6 align-items: center;">
                     <p>Married:</p>
                     <input type="checkbox">
                   </div><br><br>
-                  <div class="col-12 col-md-6">
-                    <input type="tel" placeholder="+998 -- --- -- --">
-                  </div><br><br>
-                 
-                  <div class="col-12 col-md-6">
-                    <input type="file" image/*>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <label for="color">Leptop color</label>
-                    <input id="color " name="color" type="color">
-                  </div>
-                  <div class="col-12 col-md-6">
+                  
+                  <div class="col-12 col-md-6"><br>
                     <div class="form-floating">
-                      <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                      <textarea class="form-control w-75 " placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
                       <label for="floatingTextarea2">FeedBack</label>
-                    </div>
+                    </div><br>
                     
                   </div><br><br>
+                  <div class="col-12 col-md-6">
+                    <label for="exampleColorInput" class="form-label">Color picker</label>
+                    <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
+                  </div><br>
                  
                 <div>
-                  <input class="d-flex justify-content-center " type="submit">
+                  <button type="button" class="btn btn-outline-success">Submit</button>
+                  <button type="button" class="btn btn-outline-danger">Reset</button>
                 </div>
             </form>
         </div>
